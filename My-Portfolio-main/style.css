@@ -23,12 +23,14 @@
   --blueFont: #9a9ae1;
   --whiteFont: rgb(255, 255, 255);
   --white-shade: #fff;
-  --html: #ff5024;
-  --css: #1a72ba;
-  --js: #ffdd24;
-  --cpp: #00ab45;
-  --flutter: #00c7fa;
+  --Java: #ff5024;
+  --SpringBoot: #1a72ba;
+  --JPA: #ffdd24;
+  --Security: #00ab45;
+  --SQL: #00c7fa;
   --git: #272b34;
+  --api: #91ae2a;
+  --microservices: hwb(278 21% 51%);
   --body-color: white;
   --btn-shadow: #ececec;
   --btn-angleShadow: rgb(241, 241, 241);
@@ -319,7 +321,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5rem;
+  margin-top: 4rem;
   margin-left: 11.5rem;
   cursor: pointer;
   width: 9.375rem;
@@ -358,8 +360,9 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 100vh;
-  margin-top: 1rem;
+  min-height: 100vh;
+  padding: 4rem 0;
+  margin-top: -5rem;
 }
 
 .mainHeadingDiv {
@@ -368,7 +371,8 @@ main {
   align-items: center;
   flex-direction: column;
   color: var(--blueFont);
-  margin-top: 1rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 .aboutMeHeading {
@@ -383,7 +387,7 @@ main {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  margin-top: 2rem;
+  margin-top: 0;
 }
 
 .myImgDiv {
@@ -407,16 +411,16 @@ main {
 }
 
 .aboutMeDesc {
-  font-size: 1.2rem;
-  font-weight: 400;
-  width: 22.813rem;
+  max-width: 40rem;
+  line-height: 1.8;
+  font-size: 1rem;
 }
 
 .descriptionAndCvDiv {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin: 2.5rem 0rem;
+  margin: 1rem 0;
   color: var(--blueFont);
 }
 
@@ -488,7 +492,7 @@ main {
   justify-content: center;
   flex-direction: column;
   height: 100vh;
-  margin-top: 1rem;
+  margin-top: -3rem;
 }
 
 .skillHeadingDiv {
@@ -549,37 +553,37 @@ main {
   margin-top: 4px;
 }
 
-.skillPercentageHTML {
+.skillPercentageJava {
   width: 90%;
-  background-color: var(--html);
+  background-color: var(--Java);
   height: 10px;
   border-radius: 10px;
 }
 
-.skillPercentageCSS {
+.skillPercentageSpringBoot {
+  width: 90%;
+  background-color: var(--SpringBoot);
+  height: 10px;
+  border-radius: 10px;
+}
+
+.skillPercentageJPA {
   width: 80%;
-  background-color: var(--css);
+  background-color: var(--JPA);
   height: 10px;
   border-radius: 10px;
 }
 
-.skillPercentageJS {
-  width: 65%;
-  background-color: var(--js);
-  height: 10px;
-  border-radius: 10px;
-}
-
-.skillPercentageCPP {
+.skillPercentageSQL {
   width: 70%;
-  background-color: var(--cpp);
+  background-color: var(--SQL);
   height: 10px;
   border-radius: 10px;
 }
 
-.skillPercentageFlutter {
+.skillPercentageSecurity {
   width: 65%;
-  background-color: var(--flutter);
+  background-color: var(--Security);
   height: 10px;
   border-radius: 10px;
 }
@@ -587,6 +591,18 @@ main {
 .skillPercentageGit {
   width: 75%;
   background-color: var(--git);
+  height: 10px;
+  border-radius: 10px;
+}
+.skillPercentageMicroservices {
+  width: 70%;
+  background-color: var(--microservices);
+  height: 10px;
+  border-radius: 10px;
+}
+.skillPercentageApi {
+  width: 90%;
+  background-color: var(--api);
   height: 10px;
   border-radius: 10px;
 }
@@ -611,7 +627,7 @@ main {
   justify-content: center;
   flex-direction: column;
   min-height: 180vh;
-  margin-top: 1rem;
+  margin-top: -25rem;
 }
 
 .projectHeadingDiv {
@@ -642,7 +658,7 @@ main {
   overflow: hidden;
   position: relative;
   max-height: 100%;
-  margin: 1.5rem 0rem;
+   margin-top: 4rem; 
 }
 
 .card {
@@ -768,7 +784,7 @@ main {
   background-color: var(--blue-theme);
   width: 100%;
   height: 100%;
-  margin-top: 4rem;
+  margin-top: -25rem;
   margin-bottom: 3rem;
   display: flex;
   align-items: center;

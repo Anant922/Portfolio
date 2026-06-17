@@ -158,18 +158,52 @@ getProjects().then(data => {
     showProjects(data);
 });
 
-// function for lightmode
-lightModeBtn.addEventListener('click', function () {
-    lightModeBtn.style.display = 'none';
-    darkModeBtn.style.display = 'block';
-    document.body.classList.add('dark-theme');
+// ================= DARK MODE =================
+
+// Load theme on page load
+window.addEventListener('load', function () {
+
+    let theme = localStorage.getItem('theme');
+
+    // Default theme is DARK
+    if (theme === null || theme === 'dark') {
+        document.body.classList.add('dark-theme');
+
+        // Show moon button (switch to light mode)
+        lightModeBtn.style.display = 'none';
+        darkModeBtn.style.display = 'block';
+    }
+    else {
+        document.body.classList.remove('dark-theme');
+
+        // Show sun button (switch to dark mode)
+        darkModeBtn.style.display = 'none';
+        lightModeBtn.style.display = 'block';
+    }
 });
 
-// function for darkmode
+
+// User clicks SUN -> Enable Dark Mode
+lightModeBtn.addEventListener('click', function () {
+
+    document.body.classList.add('dark-theme');
+
+    localStorage.setItem('theme', 'dark');
+
+    lightModeBtn.style.display = 'none';
+    darkModeBtn.style.display = 'block';
+});
+
+
+// User clicks MOON -> Enable Light Mode
 darkModeBtn.addEventListener('click', function () {
+
+    document.body.classList.remove('dark-theme');
+
+    localStorage.setItem('theme', 'light');
+
     darkModeBtn.style.display = 'none';
     lightModeBtn.style.display = 'block';
-    document.body.classList.remove('dark-theme');
 });
 
 // Eventlistener for animation on scroll
