@@ -4,7 +4,7 @@ A modern and responsive portfolio website showcasing my professional experience,
 
 ## 🚀 Live Demo
 
-🔗 [Portfolio Website](https://anan922.netlify.app/)
+🔗 [Portfolio Website](https://anant922.netlify.app/)
 
 ## 👨‍💻 About Me
 
